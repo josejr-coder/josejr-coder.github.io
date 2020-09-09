@@ -1,0 +1,52 @@
+/* Assignment 1-  Build a one-page website with 1 heading with the title of the class and 4 other parts 
+   Jose Martinez Jr 
+   09-08-2020
+*/
+body
+{
+	background-color: lightgreen;
+}
+
+h1
+{
+	text-align: center;
+
+}
+
+p
+{
+	margin: 0 0;
+}
+
+.centertext
+{
+	text-align: center;
+}
+h3
+{
+	text-align: center;
+
+}
+
+/*.centerlist1
+{
+	margin-left: 45%;
+}*/
+
+/*.centerlist2
+{
+	margin-left: 27%;
+}*/
+
+img
+{
+	float: left;
+	width: 150px;
+	height: 220px;
+	margin-left:20%;
+
+}
+.clear
+{
+	clear: left;
+}
