@@ -1,0 +1,74 @@
+/* Assignment 1A-  Build a one-page website with 1 heading with the title of the class and 4 other parts 
+   *Updated using JQuery
+   Jose Martinez Jr 
+   09-14-2020
+*/
+body
+{
+	background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+}
+
+h1
+{
+	text-align: center;
+	color: black;
+
+}
+
+p
+{
+	margin: 0 0;
+}
+
+.centertext
+{
+	text-align: center;
+}
+h3
+{
+	text-align: center;
+
+}
+
+/*.centerlist1
+{
+	margin-left: 45%;
+}
+
+.centerlist2
+{
+	margin-left: 27%;
+}
+*/
+
+img
+{
+	float: left;
+	width: 150px;
+	height: 220px;
+	margin-left:20%;
+
+}
+.imageborder
+{
+	float: left;
+	width: 150px;
+	height: 220px;
+	margin-left:20%;
+	border: thick solid black;
+}
+.clear
+{
+	clear: left;
+}
+
+.textcolor
+{
+	color: #cc33ff;
+}
+
+button
+{
+	display: block;
+	margin: auto;
+}
