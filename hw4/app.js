@@ -13,6 +13,7 @@ registration.scope);
 }
 //app
 let deferredPrompt;
+let btn = document.querySelector(".button");
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent the mini-infobar from appearing on mobile
   e.preventDefault();
@@ -22,9 +23,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   showInstallPromotion();
 });
 
-let buttonInstall = document.querySelector('.bapp');
-
-buttonInstall.addEventListener('click', (e) => {
+btn.addEventListener('click', (e) => {
   // Hide the app provided install promotion
   hideMyInstallPromotion();
   // Show the install prompt
