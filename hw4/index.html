@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="homework 4">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+    <title>PWA</title>
+</head>
+<body id="bi">
+    <h1>Progressive Web Application</h1>
+        <p>Choose a background:</p>
+    
+        <select name="bg" id="bg">
+        <option value="lightblue" >Light blue</option>
+        <option value="lightgold" >Light gold</option>
+      </select>
+    <button type="button" onclick="myFunction()">Change</button> 
+    <p class="centertext">
+        Characteristics of PWA..
+    </p>
+   
+    <script>
+    	if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js');
+    }
+     var selection = document.getElementById("bg");
+    function myFunction() {
+      
+      var select = selection.options[selection.selectedIndex];
+        
+        if (select.value == "lightgold"){
+            document.body.style.backgroundImage="url('images/lightgold.jpg')";
+        }
+            
+      if (select.value == "lightblue") {
+      	document.body.style.backgroundImage = "url('images/lightblue.jpg')";
+      }
+     }
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+h1
+{
+    text-align: center;
+}
+.centertext
+{
+    text-align: center;
+}
+
+#container
+{
+    text-align: center;
+    background-image: none;
+}
+
+body#bi {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
