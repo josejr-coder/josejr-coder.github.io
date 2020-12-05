@@ -4,24 +4,36 @@
 "display": "standalone",
 "display": "browser",
 "orientation": "landscape",
-  "icons": [
+"icons": [
   {
-    "src": "icon/lowres.webp",
-    "sizes": "48x48",
-    "type": "image/webp"
+    "src": "images/cellphone.png",
+    "sizes": "225x225",
+    
   },
   {
-    "src": "icon/lowres",
-    "sizes": "48x48"
+    "src": "images/icon1.png",
+    "sizes": "128x128"
   },
   {
-    "src": "icon/hd_hi.ico",
-    "sizes": "72x72 96x96 128x128 256x256"
+    "src": "images/icon2.png",
+    "sizes": "96x96"
   },
   {
-    "src": "icon/hd_hi.svg",
+    "src": "images/icon3.png",
     "sizes": "72x72"
-  }
+  },
+  {
+    "src": "images/icon4.png",
+    "sizes":"64x64"
+  },
+  {
+    "src": "images/icon5.png",
+    "sizes":"48x48"
+  },
+  {
+    "src": "images/icon6.png",
+    "sizes":"32x32"
+  },
 ],
-"start_url": "index.html"
+"start_url": "index.html?launcher=true"
 }
