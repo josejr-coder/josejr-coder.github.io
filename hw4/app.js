@@ -12,6 +12,14 @@ registration.scope);
  console.log("Service Worker is not supported by this browser");
 }
 
+//push event
+self.addEventListener('push', function(event) {
+  if (event.data) {
+    console.log('This push event has data: ', event.data.text());
+  } else {
+    console.log('This push event has no data.');
+  }
+});
 //app
 const webpush = require('web-push')
 const vapidKeys = webpush.generateVAPIDKeys()
