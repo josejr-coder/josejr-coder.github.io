@@ -23,7 +23,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
   showInstallPromotion();
 });
 
-btn.addEventListener('click', (e) => {
+if (btn) {
+    btn.addEventListener('click', (e) => {
   // Hide the app provided install promotion
   hideMyInstallPromotion();
   // Show the install prompt
@@ -37,6 +38,7 @@ btn.addEventListener('click', (e) => {
     }
   });
 });
+}
 window.addEventListener('appinstalled', (evt) => {
   // Log install to analytics
   console.log('INSTALL: Success');
