@@ -21,8 +21,8 @@ self.addEventListener('push', function(event) {
   }
 });
 //app
-const webpush = require('web-push')
-const vapidKeys = webpush.generateVAPIDKeys()
+const webpush = require('web-push');
+const vapidKeys = webpush.generateVAPIDKeys();
 
 const options = {
     TTL: 24*60*60, //TTL= time notification will be queued in the push service
