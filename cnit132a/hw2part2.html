@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with flex</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .header {
+            background-color: red;
+            
+        }
+
+        .left-sidebar {
+            background-color: yellow;
+            order: 1;
+            flex: 1;
+        }
+
+        .lcontent {
+            background-color: darkblue;
+            color: white;
+            order: 2;
+            flex: 2;
+           
+        }
+
+        .rcontent {
+            background-color: darkorchid;
+            order: 3;
+            flex: 2;
+        }
+
+        .right-sidebar {
+            background-color: pink;
+            order: 4;
+            flex: 1;
+        }
+
+        .footer {
+            background-color: greenyellow;
+            order: 5;
+        }
+
+        .header {
+            width: 100%;
+        }
+        .footer {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header">Name of Company</div>
+        <div class="left-sidebar">This is the left side</div>
+        <div class="lcontent">Main content of the page. In a 3-column layout, it should be shown in the middle between left side  and right side</div>
+        <div class="rcontent">This is here to form a 4-column layout</div>
+        <div class="right-sidebar">This is the right side</div>
+        <div class="footer">This is the footer <br>&copy; 2021</div>
+    </div>
+</body>
+</html>
