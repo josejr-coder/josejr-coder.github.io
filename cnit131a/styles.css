@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+table, th, td {
+    border: 2px solid goldenrod;
+}
+
+table {
+    margin: 15px auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(68, 44, 0);
+}
+
+/* header */
+header {
+    height: 80px;
+    background: #FACFCF;
+    padding: 25px;
+}

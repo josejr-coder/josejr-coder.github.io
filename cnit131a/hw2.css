@@ -1,0 +1,17 @@
+books {
+    background-color: lightgray;
+    text-align: center;
+}
+
+book, name, author, publisher {
+    display: block;
+}
+
+name {
+    color: red;
+    font-weight: bold;
+}
+
+book:nth-child(2n+1) {
+    background-color: lightblue;
+}
