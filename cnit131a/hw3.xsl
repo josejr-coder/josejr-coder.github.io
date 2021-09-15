@@ -12,7 +12,7 @@
     </head>
     <body>
         <h1 align="center">List of Clients</h1>
-        <table border="3" align="center">
+        <table border="3" style= "text-align:center;">
             <tr>
                 <th>Name</th>
                 <th>Phone</th>
@@ -31,7 +31,7 @@
                             </td>
                         </xsl:when>
                         <xsl:otherwise>
-                            <td style="text-align:right;"><xsl:value-of select="Account_Total"></td>
+                            <td style="text-align:right;"><xsl:value-of select="Account_Total"/></td>
                         </xsl:otherwise>
                     </xsl:choose>
                 </tr>
