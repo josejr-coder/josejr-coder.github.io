@@ -6,6 +6,9 @@
 <html>
     <head>
         <title>Clients</title>
+        <style>
+
+        </style>
     </head>
     <body>
         <h1 align="center">List of Clients</h1>
@@ -21,7 +24,16 @@
                     <td><xsl:value-of select="Name"/></td>
                     <td><xsl:value-of select="Phone"/></td>
                     <td><xsl:value-of select="E-mail"/></td>
-                    <td align="right"><xsl:value-of select="Account_Total"/></td>
+                    <xsl:choose>
+                        <xsl:when test="Account_Total &lt;= 80000">
+                            <td style="text-align:right; color:red;">
+                                <xsl:value-of select="Account_Total"/>
+                            </td>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <td style="text-align:right;"><xsl:value-of select="Account_Total"></td>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </tr>
             </xsl:for-each>
         </table>
