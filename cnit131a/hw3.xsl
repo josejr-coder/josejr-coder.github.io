@@ -12,7 +12,7 @@
     </head>
     <body>
         <h1 align="center">List of Clients</h1>
-        <table border="3" style= "text-align:center;">
+        <table border="3" style= "text-align:center; margin:auto;">
             <tr>
                 <th>Name</th>
                 <th>Phone</th>
