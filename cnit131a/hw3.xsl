@@ -27,11 +27,13 @@
                     <xsl:choose>
                         <xsl:when test="Account_Total &lt;= 80000">
                             <td style="text-align:right; color:red;">
-                                <xsl:value-of select="Account_Total"/>
+                                &#36; <xsl:value-of select="Account_Total"/>
                             </td>
                         </xsl:when>
                         <xsl:otherwise>
-                            <td style="text-align:right;"><xsl:value-of select="Account_Total"/></td>
+                            <td style="text-align:right;">
+                                &#36; <xsl:value-of select="Account_Total"/>
+                            </td>
                         </xsl:otherwise>
                     </xsl:choose>
                 </tr>
