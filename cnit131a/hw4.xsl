@@ -4,7 +4,7 @@
         <html>
             <body>
                 <h1>ABC Financial Startup</h1>
-                <img src="financialstartup.jpg" alt="two people high fiving" style="margin: auto;"/>
+                <img src="financialstartup.jpg" alt="two people high fiving" style="margin: auto; display: block;"/>
 
                 <p>We are a very young financial manager company and we are proud of our clients</p>
                 <p>We have started with 1 client a little bit more than 10 years ago and now we have 
