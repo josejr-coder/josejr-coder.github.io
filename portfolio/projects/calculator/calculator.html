@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <header><h1>Calculator</h1></header>
+    <p>Add 2 numbers by typing them below</p>
+    <form action="/action_page.php">
+        <label for="f-number"></label>
+            <input type="text" name="f-number" id="f-number">
+        <p style="display: inline-block; font-weight: bolder; font-size: 20px;">+</p>
+        <label for="s-number"></label>
+            <input type="text" name="s-number" id="s-number">
+    </form>
+    <button type="button" id="button" onclick="sum()">Add numbers</button>
+    <p id="result"></p>
+
+    <script>
+
+        function sum() {
+            var a = document.getElementById("f-number").value;
+            var b = document.getElementById("s-number").value;
+
+            var c = parseFloat(a) + parseFloat(b);
+
+            document.getElementById("result").innerHTML="The sum of the 2 numbers is " + c;
+
+        }
+    </script>
+</body>
+</html>
